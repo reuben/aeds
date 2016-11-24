@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[x11names, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+\begin{tikzpicture}[>=latex',line join=bevel,]
+%%
+\begin{scope}
+  \pgfsetstrokecolor{black}
+  \definecolor{strokecol}{rgb}{1.0,1.0,1.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{fillcol}{rgb}{1.0,1.0,1.0};
+  \pgfsetfillcolor{fillcol}
+\end{scope}
+\begin{scope}
+  \pgfsetstrokecolor{black}
+  \definecolor{strokecol}{rgb}{1.0,1.0,1.0};
+  \pgfsetstrokecolor{strokecol}
+  \definecolor{fillcol}{rgb}{1.0,1.0,1.0};
+  \pgfsetfillcolor{fillcol}
+\end{scope}
+  \node (1) at (86.86bp,-42.918bp) [draw=gray!40,fill=gray!40,ellipse] {$1$};
+  \node (0) at (53.387bp,146.53bp) [draw,ellipse] {$0$};
+  \node (3) at (12.927bp,80.635bp) [draw,ellipse] {$3$};
+  \node (2) at (62.216bp,-119.1bp) [draw=gray!40,fill=gray!40,ellipse] {$2$};
+  \node (5) at (-6.9901bp,-81.533bp) [draw=gray!40,fill=gray!40,ellipse] {$5$};
+  \node (4) at (15.717bp,-1.3643bp) [draw,ellipse] {$4$};
+  \node (7) at (-69.135bp,5.3122bp) [draw,ellipse] {$7$};
+  \node (6) at (-69.27bp,84.376bp) [draw=green!40,fill=green!40,ellipse] {$6$};
+  \node (8) at (-85.713bp,-71.938bp) [draw,ellipse] {$8$};
+  \draw [very thick] (0) ..controls (36.88bp,119.65bp) and (29.228bp,107.18bp)  .. node {$0.20$} (3);
+  \draw [] (3) ..controls (-23.41bp,82.289bp) and (-33.362bp,82.742bp)  .. node {$0.40$} (6);
+  \draw [] (4) ..controls (6.9148bp,-32.441bp) and (1.795bp,-50.517bp)  .. node {$0.15$} (5);
+  \draw [] (5) ..controls (-41.849bp,-77.284bp) and (-50.883bp,-76.183bp)  .. node {$0.10$} (8);
+  \draw [very thick] (4) ..controls (-21.035bp,1.5275bp) and (-32.255bp,2.4104bp)  .. node {$0.10$} (7);
+  \draw [] (6) ..controls (-69.217bp,53.266bp) and (-69.188bp,36.302bp)  .. node {$0.30$} (7);
+  \draw [very thick] (7) ..controls (-75.658bp,-25.085bp) and (-79.215bp,-41.66bp)  .. node {$0.10$} (8);
+  \draw [] (1) ..controls (56.926bp,-25.434bp) and (45.875bp,-18.979bp)  .. node {$0.40$} (4);
+  \draw [dotted] (1) ..controls (77.192bp,-72.808bp) and (71.951bp,-89.008bp)  .. node {$0.30$} (2);
+  \draw [] (2) ..controls (32.49bp,-102.96bp) and (22.594bp,-97.593bp)  .. node {$0.10$} (5);
+  \draw [very thick] (3) ..controls (14.008bp,48.848bp) and (14.638bp,30.36bp)  .. node {$0.20$} (4);
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+
